@@ -1,13 +1,15 @@
 import spock.lang.Specification
 import spock.lang.Unroll
 
+import static Calculator.take
+
 @Unroll
 class CalculatorTest extends Specification {
 
-    def "should add"(int x, int y, int sum) {
+    def "should calculate sum"() {
 
         expect:
-        new Calculator(x).plus(y).result() == sum
+        take(x).add(y).calculate() == sum
 
         where:
         x | y  | sum
@@ -17,21 +19,21 @@ class CalculatorTest extends Specification {
 
     }
 
-    def "plus minus"() {
+    def "should subtract numbers"() {
 
         given:
         Calculator calculator = new Calculator()
         when:
-        calculator.plus(4).minus(1)
+        calculator.add(4).subtract(4)
         then:
-        calculator.result() == 3
+        calculator.calculate() == 0
 
     }
 
-    def "multiple"() {
+    def "should multiply"() {
 
         expect:
-        new Calculator(2).multiply(2).result() == 4
+        take(2).multiply(2).calculate() == 4
 
     }
 }

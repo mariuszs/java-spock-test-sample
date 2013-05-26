@@ -9,22 +9,26 @@ public class Calculator {
         this.accumulators = new ArrayList<>();
     }
 
-    public Calculator(int accumulator) {
-        this();
-        plus(accumulator);
+    public static Calculator take(int accumulator) {
+        return new Calculator(accumulator);
     }
 
-    public Calculator plus(int x) {
+    private Calculator(int accumulator) {
+        this();
+        add(accumulator);
+    }
+
+    public Calculator add(int x) {
         accumulators.add(x);
         return this;
     }
 
-    public Calculator minus(int x) {
+    public Calculator subtract(int x) {
         accumulators.add(-x);
         return this;
     }
 
-    public int result() {
+    public int calculate() {
         Integer result = 0;
         for (Integer accumulator : accumulators) {
             result += accumulator;
@@ -33,9 +37,9 @@ public class Calculator {
     }
 
     public Calculator multiply(int p) {
-        int accumulator = result() * p;
+        int accumulator = calculate() * p;
         accumulators.clear();
-        plus(accumulator);
+        add(accumulator);
         return this;
     }
 }

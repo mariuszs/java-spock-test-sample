@@ -61,4 +61,19 @@ Simple project configuration
 
      </project>
 
+IntelliJ Idea
+=============
+
+This project works out of the box in IntelliJ Idea 12.1.4 (129.549). Default label look need some changes to look better.
+
+Go to Settings -> Editor -> Colors & Fonts -> Groovy, create new Schema (Save as) and change Label (last attribute)
+
+    Font type: Bold
+    Foreground: 0000FF
+
+
+After this Spock Tests (Spec) looks in IntelliJ Idea like this:
+
+![sample spec](https://github.com/mariuszs/java-spock-test-sample/raw/master/spec.png "Sample Spec")
+
 
