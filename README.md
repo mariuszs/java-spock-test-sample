@@ -76,4 +76,4 @@ After this Spock Tests (Spec) looks in IntelliJ Idea like this:
 
 ![sample spec](https://github.com/mariuszs/java-spock-test-sample/raw/master/spec.png "Sample Spec")
 
-
+PS. Idea can autoformat Spock data tables :)
