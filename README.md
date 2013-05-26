@@ -1,10 +1,10 @@
 Java meet Spock
 ===============
-Sample Maven Project with Java and Spock tests (Groovy 2)
+Sample Maven Project with Java and Spock tests
 ---------------------------------------
 
-Sample project configuration with Maven for Java project with readable tests written in [Groovy](http://groovy.codehaus.org/)
-with [Spock](https://code.google.com/p/spock/)
+Sample project configuration with Maven for Java project with readable tests written in [Groovy 2](http://groovy.codehaus.org/)
+with [Spock Specifcation Framework](https://code.google.com/p/spock/)
 
 
 Simple project configuration
