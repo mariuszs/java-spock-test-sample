@@ -1,4 +1,4 @@
-Sample Maven Project: Java + Spock
+Java meet Spock : Sample Maven Project
 ---------------------------------------
 
 Sample project configuration with Maven for Java project with readable tests written in [Spock](https://code.google.com/p/spock/) ([Groovy](http://groovy.codehaus.org/))
