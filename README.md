@@ -1,7 +1,10 @@
-Java meet Spock : Sample Maven Project
+Java meet Spock
+===============
+Sample Maven Project with Java and Spock tests (Groovy 2)
 ---------------------------------------
 
-Sample project configuration with Maven for Java project with readable tests written in [Spock](https://code.google.com/p/spock/) ([Groovy](http://groovy.codehaus.org/))
+Sample project configuration with Maven for Java project with readable tests written in [Groovy](http://groovy.codehaus.org/)
+with [Spock](https://code.google.com/p/spock/)
 
 
 Simple project configuration
@@ -12,10 +15,10 @@ Simple project configuration
     src/
        main/
            java/
-               (java source code)
+               *.java       (java source code)
        test/
            groovy/
-               (spock code)
+               *Test.groovy (spock code)
     pom.xml
 
 
@@ -64,12 +67,12 @@ Simple project configuration
 IntelliJ Idea
 =============
 
-This project works out of the box in IntelliJ Idea 12.1.4 (129.549). Default label look need some changes to look better.
+This project works out of the box in [IntelliJ Idea](http://www.jetbrains.com/idea/download/) 12.1.4 (129.549). Default label look need some changes to look better.
 
-Go to Settings -> Editor -> Colors & Fonts -> Groovy, create new Schema (Save as) and change Label (last attribute)
+Go to **Settings -> Editor -> Colors & Fonts -> Groovy**, create new Schema (Save as) and change **Label** (last attribute)
 
-    Font type: Bold
-    Foreground: 0000FF
+* Font type: **Bold**
+* Foreground: **0000FF**
 
 
 After this Spock Tests (Spec) looks in IntelliJ Idea like this:
