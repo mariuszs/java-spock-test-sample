@@ -1,12 +1,14 @@
+package mariuszs.spock
+
 import spock.lang.Specification
 import spock.lang.Unroll
 
-import static Calculator.take
+import static mariuszs.spock.Calculator.take
 
 @Unroll
 class CalculatorTest extends Specification {
 
-    def "should calculate sum"() {
+    def "should calculate: #x + #y = #sum"() {
 
         expect:
         take(x).add(y).calculate() == sum
