@@ -1,26 +1,41 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Calculator {
 
-    private int accumulator;
+    private final List<Integer> accumulators;
 
     public Calculator() {
-        this.accumulator = 0;
+        this.accumulators = new ArrayList<>();
     }
 
     public Calculator(int accumulator) {
-        this.accumulator = accumulator;
+        this();
+        plus(accumulator);
     }
 
     public Calculator plus(int x) {
-        accumulator += x;
+        accumulators.add(x);
         return this;
     }
 
     public Calculator minus(int x) {
-        accumulator -= x;
+        accumulators.add(-x);
         return this;
     }
 
     public int result() {
-        return accumulator;
+        Integer result = 0;
+        for (Integer accumulator : accumulators) {
+            result += accumulator;
+        }
+        return result;
+    }
+
+    public Calculator multiply(int p) {
+        int accumulator = result() * p;
+        accumulators.clear();
+        plus(accumulator);
+        return this;
     }
 }
