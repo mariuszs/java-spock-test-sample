@@ -1,6 +1,6 @@
 package mariuszs.spock;
 
-public interface MachineService {
+interface MachineService {
 
     int calculateAndPersist(int x, int y);
 }

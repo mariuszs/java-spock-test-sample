@@ -2,10 +2,6 @@ package mariuszs.spock;
 
 import static mariuszs.spock.Calculator.take;
 
-/**
- * @author mariuszs
- * @since 26.05.13
- */
 public class MachineServiceImpl implements MachineService {
 
     private final MachineDao machineDao;
